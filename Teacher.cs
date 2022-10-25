@@ -8,9 +8,11 @@ namespace ClassWork2
 {
     internal class Teacher : Person
     {
-        public void Explain()
+        private string _explaning;
+        public void Explain(string explaning)
         {
-            Console.WriteLine("Я объясняю");
+            _explaning = explaning;
+            Console.WriteLine(explaning);
         }
     }
 }

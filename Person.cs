@@ -9,7 +9,7 @@ namespace ClassWork2
     internal class Person
     {
         private string ?_hello;
-        protected int Age = 35;
+        protected int Age;
         public void Greet(string hello) 
         {
             _hello = hello;
@@ -20,9 +20,9 @@ namespace ClassWork2
         public void SetAge(int age) 
         { 
             Age = age;
-            Console.WriteLine("Введите возраст");
-            age = Convert.ToInt32 (Console.ReadLine());
-        
+            Console.WriteLine(age);
+            //age = Convert.ToInt32(Console.ReadLine());
+
         }
 
     }

@@ -2,19 +2,20 @@
 {
     internal class StudentProfessorTest 
     {
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             Person person = new Person();
             person.Greet("Приветствую");
 
             Person student = new Person();
             student.Greet("Hello");
-            student.SetAge();
+            student.SetAge(12);
 
             Person teacher = new Person();
             teacher.Greet("Приветствую");
-            teacher.SetAge();
-            teacher.Explain();
+            //teacher.SetAge(int age = Convert.ToInt32(Console.ReadLine());
+            teacher.SetAge(22);
+            teacher.Explane("Объясняю");
         }
     }
 }
